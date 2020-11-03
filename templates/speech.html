@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+        <title>
+            NUMBER
+        </title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+            }
+            .heade{
+                background-color: rgb(142, 240, 240);
+                height: 100px;
+                text-align: center;
+                font-size: 25px;
+            }
+            .heade h2{
+                padding-top: 20px;
+            }
+            .num{
+                /* margin: 100px 0 0 20px; */
+               
+                margin-top: 60px;
+                width: 100%;
+                height: 60vh;
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: repeat(2,1fr);
+                grid-column-gap: 20px;
+                grid-row-gap: 50px;
+                font-size: 13px;
+            }
+            .num1{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+            .num1 .destin{
+                border: 2px solid black;
+                border-radius: 5px;
+            }
+            .num3 .destin,.num4 .destin{
+                border:none;
+            }
+            .destin1{
+                width:320px;
+            }
+            .destin2{
+                width:320px;height: 215px;
+            }
+            .destin3{
+                width:320px;
+            }
+            .destin4{
+                width:260px;
+            }
+            .destin5{
+                width:230px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="heade">
+            <h2>VOICE RECOGNITION</h2>
+            <br>
+            <h3>PLEASE SPEAK!</h3>
+        </div>
+        <div class="num">
+            <div class="num1">
+                <img src="{{url_for('static',filename='A_block.png')}}" class="destin destin1"style="width:320px"alt="ablock">
+                <img src="{{url_for('static',filename='one.JPG')}}" style="width:50px"alt="one">
+                <h2>{{data[0]}}</h2>
+            </div>
+            <div class="num1">
+                <img src="{{url_for('static',filename='b_block.png')}}" class="destin destin2"style="width:320px;height: 215px;"alt="bblock">
+                <img src="{{url_for('static',filename='two.JPG')}}" style="width:50px"alt="two">
+                <h2>{{data[1]}}</h2>
+            </div>
+            <div class="num1 num5">
+                <img src="{{url_for('static',filename='canteen.jpg')}}" class="destin destin3"style="width:320px;"alt="canteen">
+                <img src="{{url_for('static',filename='three.JPG')}}" style="width:50px"alt="three">
+                <h2>{{data[2]}}</h2>
+            </div>
+            <div class="num1 num4">
+                <img src="{{url_for('static',filename='medical.jpeg')}}" class="destin destin4"style="width:260px;" alt="medical">
+                <img src="{{url_for('static',filename='four.JPG')}}" style="width:50px"alt="four">
+                <h2> {{data[3]}}</h2>
+            </div> 
+            
+            <div class="num1 num3">
+                <img src="{{url_for('static',filename='gym.jpeg')}}" class="destin destin5"style="width:230px;" alt="gym">
+                <img src="{{url_for('static',filename='five.JPG')}}" style="width:50px"alt="five">
+                <h2> {{data[4]}}</h2>
+            </div> 
+        </div>
+         <meta http-equiv="refresh" content="3;url=/speech_access_emotion">  
+    </body>
+</html>

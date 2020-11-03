@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>  
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 30px;
+        color: #399e39;
+    }
+</style> 
+<body>
+    <div class="img">
+        <img src="{{url_for('static',filename='thumbsupnew.jpg')}}" style="width:700px;" alt="">
+    </div>
+   <div class="aces">
+    <h1>Turnstile Opened!!</h1>
+    <!-- <h3></h3> -->
+   </div>
+    <meta http-equiv="refresh" content="3;url=/session">  
+</body>
+</html>
+
+
+
+
+
+<!-- <html>
+<head>
+    <title>Acess for prisoner</title>
+</head>   
+<body>
+    <h1>Acess Granted to you For</h1>
+
+    <h3>{{data}} 
+        
+    
+        
+    </h3>
+    <meta http-equiv="refresh" content="3;url=/session">
+   
+    
+</body>
+</html>     -->
